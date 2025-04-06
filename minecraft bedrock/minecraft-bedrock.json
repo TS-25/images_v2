@@ -61,6 +61,7 @@
   },
   "environment": {
     "type": "host"
+    "EULA": "TRUE"
   },
   "supportedEnvironments": [
     {
