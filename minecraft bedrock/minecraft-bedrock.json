@@ -53,13 +53,10 @@
       "userEdit": true
     }
   },
-  "portBindings": [
-        "0.0.0.0:${server-port}:${server-port}/tcp"
-  ]
- "Name": "Minecraft: Bedrock Server",
+   "Name": "Minecraft: Bedrock Server",
   "Description": "A Minecraft Bedrock Edition server Docker image for hosting Bedrock servers easily. It allows you to configure settings such as memory allocation and server version.",
-  "Author": "TS-25",
-  "AuthorName": "TANVIR-SAMI",
+  "Author": "info@skyport.dev",
+  "AuthorName": "TANVIR",
   "Meta": {
     "Version": "Images v2"
   }
