@@ -3,7 +3,7 @@
   "Cmd": "/start",
   "Env": [
     "EULA=TRUE",
-    "VERSION=latest"
+    "VERSION=1.21.70.03"
   ],
   "Scripts": {
     "Install": [
