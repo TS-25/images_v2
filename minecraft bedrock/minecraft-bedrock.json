@@ -1,15 +1,11 @@
 {
-  "Variables": {
-   "version": {
-      "type": "string",
-      "value": "1.19.50.02",
-      "display": "Bedrock Version",
-      "desc": "Version of the Minecraft Bedrock Server to use",
-      "required": true,
-      "userEdit": true
-    },
-     },
-  "install": [
+  "Image": "itzg/minecraft-bedrock-server:latest",
+  "Cmd": "./bedrock_server",
+  "Env": [
+    "EULA=TRUE"
+  ],
+  "Scripts": {
+    "install": [
     {
       "type": "download",
       "files": [
@@ -45,47 +41,25 @@
         "Uri": "https://raw.githubusercontent.com/jhondrheydacudao/images_v2/refs/heads/main/minecraft%20bedrock/server.properties",
         "Path": "server.properties"
       }
-    ],
-  "run": {
-    "command": "./bedrock_server",
-    "stop": "stop",
-    "environmentVars": {
-      "LD_LIBRARY_PATH": "."
-    },
-    "stdin": {
-      "type": "stdin"
-    },
-    "autostart": false,
-    "autorecover": false,
-    "autorestart": false
-  },
-  "environment": {
-    "type": "host"
-    "EULA": "TRUE"
-  },
-  "supportedEnvironments": [
-    {
-      "type": "host"
-    },
-    {
-      "type": "docker",
-      "image": "pufferpanel/ubuntu",
-      "portBindings": [
-        "0.0.0.0:${server-port}:${server-port}/tcp"
-      ]
-    }
-  ],
-  "requirements": {
-    "os": "linux",
-    "arch": "amd64",
-    "binaries": [
-      "unzip"
     ]
   },
+  "Variables": {
+   "version": {
+      "type": "string",
+      "value": "1.19.50.02",
+      "display": "Bedrock Version",
+      "desc": "Version of the Minecraft Bedrock Server to use",
+      "required": true,
+      "userEdit": true
+    }
+  },
+  "portBindings": [
+        "0.0.0.0:${server-port}:${server-port}/tcp"
+  ]
  "Name": "Minecraft: Bedrock Server",
   "Description": "A Minecraft Bedrock Edition server Docker image for hosting Bedrock servers easily. It allows you to configure settings such as memory allocation and server version.",
   "Author": "TS-25",
-  "AuthorName": "TANVIR SAMI",
+  "AuthorName": "TANVIR-SAMI",
   "Meta": {
     "Version": "Images v2"
   }
