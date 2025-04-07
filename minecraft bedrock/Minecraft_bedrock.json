@@ -3,14 +3,16 @@
   "Cmd": "/start",
   "Env": [
     "EULA=TRUE",
-    "VERSION=1.21.70.03"
+    "version=1.21.70.03"
   ],
   "Scripts": {
     "Install": [
       {
-        "Uri": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-${VERSION}.zip",
-        "Path": "bedrock_server.zip"
-      },
+      "type": "download",
+      "files": [
+        "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-${version}.zip"
+      ]
+    },
          {
       "type": "extract",
       "source": "bedrock-server-${version}.zip",
