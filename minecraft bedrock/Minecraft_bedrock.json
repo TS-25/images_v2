@@ -11,6 +11,11 @@
         "Uri": "https://www.minecraft.net/bedrockdedicatedserver/bin-linux/bedrock-server-${VERSION}.zip",
         "Path": "bedrock_server.zip"
       },
+         {
+      "type": "extract",
+      "source": "bedrock-server-${version}.zip",
+      "destination": ""
+    },
       {
         "Uri": "https://raw.githubusercontent.com/jhondrheydacudao/images_v2/refs/heads/main/minecraft%20bedrock/Dedicated_Server.txt",
         "Path": "Dedicated_Server.txt"
